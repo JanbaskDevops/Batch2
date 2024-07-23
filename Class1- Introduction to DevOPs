@@ -1,0 +1,56 @@
+JB11305 DevOps-22ndJuly2024  Class1 IntroductionToDevOps 
+
+> What is DevOps?
+Father Of DevOPs > Patrick Dubois
+
+How Patrick define DevOps
+As per Patrick, any improvement in system[IT system] is known as DevOps.
+
+Generally, We have following phases-
+
+Development Phase # Developer
+1) Plan
+2) Code
+3) Build
+4) Test
+
+Operation Phase # Operator
+5) Release
+6) Deploy
+7) Operate 
+8) Monitor
+
+Meeting name: #DevOpsDays   > DevOps
+Link: https://devopsdays.org/
+
+> Why we need DevOps
+to do improvement in continuous manner.
+
+>DevOps Video
+https://www.youtube.com/results?search_query=patrick+debois+devops+talk
+
+>Design thinking
+Understand the problem before you give any solution.
+
+Failure in DevOps
+=================
+DevOps talk about theory, but no practical.
+
+Set of Tool by which we can do improvement> DevOps tools.
+
+DevOps Principles:
+=================
+1) Developer should respect Operator.
+
+2) Operator should respect Developer.
+
+3) Try to make process uniform.  Prod> change record, Dev > Ticket
+Dev, Test, QA, preprod and prod
+
+4) Implement Continuous deployment pipeline
+
+5) Implement Infrastructure as Code
+
+
+> Lab setup
+https://killercoda.com/playgrounds/scenario/ubuntu
