@@ -1,0 +1,77 @@
+In DevOps We have 8 Phases-
+
+1) Plan: What I want to make, How I want to make and requirement gathering phase[Java, cloud, ....]
+
+2) Code: I would be writing code for my application
+
+3) Build: In my application we have two things 1) Application logic, 2) Presentation logic
+                                                    c=a+b # Application/business login
+                                                      GUI for calculator # Presentation logic
+
+        In this phase we combine presentation logic and business logic
+
+
+4) Test: We perform testing to identify we are doing correct or not
+
+We have multiple environment- Dev, Test, QA, preprod and Prod
+
+Deployment- Doing activity on server
+
+5) Release- Deployment on Dev, test, QA, preprod
+
+6) Deploy- Deployment on production
+
+7) Operate- doing day to day maintenance
+
+8) Monitor- monitoring the application
+
+Example: I want to make E-learning website
+
+tools:
+
+Plan- Jira, azure board
+
+code- git
+
+build- maven
+
+Test- DAST[Dynamic application security testing] and SAST[Static application security testing]
+
+Release and deploy- Docker ad Kubernetes
+
+Operate
+
+monitor- Splunk
+
+Terraform, Ansible, Jenkins
+
+Exacize1: Install git, terraform, packer, docker into killer koda
+
+
+GIT
+===
+1) To check if tool is already installed  >>> git --version
+2) To install a tool >>> apt-get update ; apt install git -y
+3) To uninstall a tool >>> apt-get update ; apt remove git -y
+
+Docker
+=======
+1) To check if tool is already installed  >>> docker --version
+2) To install a tool >>> apt-get update ; apt install docker.io -y
+3) To uninstall a tool >>> apt-get update ; apt remove docker.io -y
+
+Terraform >> https://developer.hashicorp.com/terraform/install
+=========
+1) To check if tool is already installed  >>> terraform --version --version
+2) To install a tool >>> 
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install terraform
+
+packer
+======
+1) To check if tool is already installed  >>> packer --version --version
+2) To install a tool >>> 
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+sudo apt update && sudo apt install packer
