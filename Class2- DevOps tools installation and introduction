@@ -68,7 +68,7 @@ wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/sha
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform
 
-packer
+packer >> https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli
 ======
 1) To check if tool is already installed  >>> packer --version --version
 2) To install a tool >>> 
