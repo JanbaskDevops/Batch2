@@ -7,7 +7,6 @@ Operation Mindset <They focus on process>
 
 Please write down steps for drawing elephant
 
-
 JB11305 Class5 WelcomeToTheWorldofVersionControlSystem 
 ======================================================
 
@@ -21,4 +20,11 @@ What is repository
 ==================
 >> It is place where we can share our data.
 
->> It's a kind of central server.
+>> It's a kind of central server.[Initial definition]
+
+>> commit means saving the contain
+
+What is GIT
+===========
+
+>> GIT is a repository where we can store file and folder for tracking the changes.
