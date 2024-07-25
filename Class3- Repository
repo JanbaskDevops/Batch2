@@ -24,4 +24,107 @@ What is repository
 
 >> commit means saving the contain
 
+What is GIT
+===========
 
+>> GIT is a repository where we can store file and folder for tracking the changes.
+
+Green >>> Adding the changes
+
+Red >> removing the changes
+
+WOW with GIT
+============
+
+IN git we have 4 area's
+
+1) working directory> It's a place from where you are running the command
+
+2) Stagging area> Compressing and encryption
+
+3) Local repository> We will create one folder, and run git init command into it.
+
+4) Remote repository> Here with the help of URL we are doing the changes.
+
+
+git clone <URL>
+================
+
+This command used to copy remote repository to local repository
+
+Example: git clone https://github.com/JanbaskDevops/Batch2.git
+
+
+ubuntu $ git clone https://github.com/JanbaskDevops/Batch2.git
+Cloning into 'Batch2'...
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 24 (delta 12), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (24/24), 9.10 KiB | 2.28 MiB/s, done.
+ubuntu $ ls
+Batch2  filesystem  snap
+
+ubuntu $ cd Batch2/
+
+ubuntu $ ls
+'Class1- Introduction to DevOPs'                      'Class3- Repository'
+'Class2- DevOps tools installation and introduction'
+
+
+How to create local repository
+==============================
+ubuntu $ mkdir Batch4
+ubuntu $ cd Batch4
+ubuntu $ git init
+Initialized empty Git repository in /root/Batch4/.git/
+
+What is git init command
+========================
+git init will convert folder into repository
+
+
+How to add username and password into repository
+================================================
+
+ubuntu $ git config --list  
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+
+
+git config --global user.name "Umesh"
+git config --global user.email "Umesh@gmail.com"
+
+ubuntu $ git config --global user.name "Umesh"
+ubuntu $ git config --global user.email "Umes@gmail.com"
+ubuntu $ git config --list
+
+user.name=Umesh
+user.email=Umes@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+Casestudy: Suppose, you are working on organisation, and they ask you to upload your image into portal.
+            maximum image size: 2 MB
+            Image you have: 100 MB
+
+what you do? >> compressing on image
+100MB >> 80MB >> 65MB >> 55MB............ 1MB
+
+In this scenario, multiple compression is happening, and encryption also happening
+
+
+Homework
+=========
+1) Create a public repository with name MyLearning
+
+2) Upload syllabus.txt 
+
+3) Create a folder with name Data, and upload few test files
+
+4) Create a local repository with name local-repo
+
+5) setup username and password for local repository
