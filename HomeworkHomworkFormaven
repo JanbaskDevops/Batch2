@@ -3,7 +3,7 @@ Homework
 Install java
 -------------
 apt-get update
-apt install
+apt install openjdk-17-jdk-headless -y
 
 
 Install maven
