@@ -12,7 +12,7 @@ apt-get update
 apt install maven -y
 
 
-Practice maven goals
+Practice maven goals [mvn goal]
 --------------------
     validate - validate the project is correct and all necessary information is available
     compile - compile the source code of the project
