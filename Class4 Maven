@@ -1,0 +1,131 @@
+JB11305 DevOps-22ndJuly2024  Class8 maven 
+==========================================
+
+In DevOps we have 8 phases-
+
+Plan code Build Test
+Release Deploy Operate monitor
+
+Maven?
+It's a build tool
+
+What is Build?
+When you are creating any software you would be having 2 things-
+
+1) Presentation logic: Look and feel
+2) Business logic: it's about the main logic
+
+Build tool will combine both the logic and generate the artifact.
+
+How to install maven tool
+==========================
+apt-get update
+apt install maven -y
+
+ubuntu $ mvn --version
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 11.0.23, vendor: Ubuntu, runtime: /usr/lib/jvm/java-11-openjdk-amd64
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "5.4.0-131-generic", arch: "amd64", family: "unix"
+
+How maven is working?
+=====================
+1) Developer is writing the code in GitHub and share URL with us
+https://github.com/spring-projects/spring-petclinic.git
+
+2) to get this code locally, we need to run below command
+     >>> git clone <URL>
+         git clone https://github.com/spring-projects/spring-petclinic.git
+
+Maven goal
+==========
+
+    validate - validate the project is correct and all necessary information is available
+    compile - compile the source code of the project
+    test - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+    package - take the compiled code and package it in its distributable format, such as a JAR.
+    verify - run any checks on results of integration tests to ensure quality criteria are met
+    install - install the package into the local repository, for use as a dependency in other projects locally
+    deploy - done in the build environment, copies the final package to the remote repository for sharing with other developers and projects.
+
+
+How maven working?
+===================
+How to compile java program?
+============================
+1) write a java program pragramname.java
+
+2) javac <program name>
+
+3) java <program name>
+
+Prework:
+
+We need to install java
+
+command:
+=======
+apt-get update
+apt install openjdk-17-jdk-headless -y
+
+# Step 1: Write the Java Program
+echo 'public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}' > HelloWorld.java
+
+# Step 2: Compile the Java Program
+javac HelloWorld.java
+
+# Step 3: Create a Manifest File
+echo 'Main-Class: HelloWorld' > manifest.txt
+
+# Step 4: Create the JAR File
+jar cfm HelloWorld.jar manifest.txt HelloWorld.class
+
+# Step 5: Run the JAR File
+java -jar HelloWorld.jar
+
+2) Source code structure
+src- source
+
+Example of Calculator-
+
+Add
+
+Substract
+
+Multiply
+
+devide
+
+screen.java
+
+Now, to compile all the java file in once  
+
+maven package
+
+
+ubuntu $ ls -lrt
+total 96
+-rw-r--r-- 1 root root    38 Jul 30 01:16 settings.gradle
+-rw-r--r-- 1 root root  9763 Jul 30 01:16 readme.md
+-rw-r--r-- 1 root root 15313 Jul 30 01:16 pom.xml
+-rw-r--r-- 1 root root  6913 Jul 30 01:16 mvnw.cmd
+-rwxr-xr-x 1 root root 10666 Jul 30 01:16 mvnw
+-rw-r--r-- 1 root root  2918 Jul 30 01:16 gradlew.bat
+-rwxr-xr-x 1 root root  8692 Jul 30 01:16 gradlew
+drwxr-xr-x 3 root root  4096 Jul 30 01:16 gradle
+-rw-r--r-- 1 root root   547 Jul 30 01:16 docker-compose.yml
+-rw-r--r-- 1 root root  2866 Jul 30 01:16 build.gradle
+-rw-r--r-- 1 root root 11360 Jul 30 01:16 LICENSE.txt
+drwxr-xr-x 5 root root  4096 Jul 30 01:16 src
+ubuntu $ 
+
+POM.xml
+=======
+location: https://github.com/spring-projects/spring-petclinic/blob/main/pom.xml
+
+>> It is a file which has information about dependencies, and project basic information
