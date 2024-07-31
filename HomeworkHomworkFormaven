@@ -1,18 +1,16 @@
-Homework
-=========
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
 
-Install java
--------------
+# Installing java
 apt-get update
 apt install openjdk-17-jdk-headless -y
 
 
-Install maven
---------------
+# Installing maven
 apt-get update
 apt install maven -y
+
+mvn package
 
 
 Practice maven goals [mvn goal]
