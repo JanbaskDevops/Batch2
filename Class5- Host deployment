@@ -1,0 +1,41 @@
+Host deployment
+===============
+
+git clone https://github.com/spring-projects/spring-petclinic.git
+cd spring-petclinic
+
+apt-get update
+apt install maven -y
+
+apt-get update
+apt install openjdk-17-jdk-headless -y
+
+mvn package -DskipTests # One jar file would be created
+
+java -jar target/*.jar
+
+
+Error
+-----
+[INFO] Compiling 24 source files with javac [debug parameters release 17] to target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20.715 s
+[INFO] Finished at: 2024-07-31T01:46:16Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project spring-petclinic: Fatal error compiling: error: release version 17 not supported -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+
+In these scenario we need to report issue to development team.
+
+
+
+
+
