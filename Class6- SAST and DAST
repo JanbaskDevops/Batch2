@@ -1,0 +1,25 @@
+1) SAST[Static application security testing] Hands on
+=====================================================
+
+Vulnerability: A security-related issue which represents a backdoor for attackers.
+
+[Source code] https://github.com/juice-shop/juice-shop
+Step1: git clone https://github.com/juice-shop/juice-shop
+
+[SAST tool link] https://github.com/ZupIT/horusec
+Step2: apt-get update ; apt install jq
+
+Step3: curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/master/deployments/scripts/install.sh | bash -s latest
+       horusec version
+
+Step4: horusec start -D -e="true" -p ./
+
+Horusec is an open source framework that enhances the identification of vulnerabilities in your project with just one command.
+https://horusec.io/site/
+
+
+In this analysis, a total of 492 possible vulnerabilities were found and we classified them into:
+Total of Vulnerability CRITICAL is: 382
+Total of Vulnerability HIGH is: 102
+Total of Vulnerability MEDIUM is: 5
+Total of Vulnerability LOW is: 3
